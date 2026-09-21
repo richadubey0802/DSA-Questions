@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delete Element</title>
+    <script>
+        // let data= [1,2,3,4,5,67,8]
+        // let position= 4
+        // for(let i=position; i<data.length-1; i++){
+        //         data[i]= data[i+1]
+        //     }
+        //     data.length= data.length-1;
+        
+        // console.log(data);
+
+        function getElement(){
+        let data= [1,2,3,4,5,67,8]
+        let position= document.getElementById('position').value
+        position= parseInt(position)
+        for(let i=position; i<data.length-1; i++){
+                data[i]= data[i+1]
+            }
+            data.length= data.length-1;
+            console.log(data);
+         }
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="position">
+    <button onclick="getElement()">Button</button>
+    
+</body>
+</html>
