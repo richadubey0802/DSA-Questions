@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Array traversing and accessing</title>
+    <script>
+        let data= [1,2,3,4,5,6,7]
+        for(let i=0; i<data.length; i++){
+            //document.write(`Array of ${i} is ${data[i]} </br>`)
+            function getElement(){
+                let ele= document.getElementById('element').value
+                if(ele<0){
+                    alert("Negative value is not allowed")
+                }
+                 if(ele< data.length)
+                 {
+                    document.write(data[i])
+                 }
+                 else{
+                    alert("Enter the valid number")
+                 }
+            }  
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick="getElement()">Button</button>
+</body>
+</html>
