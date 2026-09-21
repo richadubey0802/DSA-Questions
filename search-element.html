@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search element</title>
+    <script>
+        // let data= [10,20,30,40,50]
+        // let index= undefined
+        // let item= 30
+
+        // for(let i=0; i<data.length-1; i++){
+        //     if(data[i] == item){
+        //         index= i
+        //     }
+        // }
+        // console.log(index);
+
+        function searchElement(){
+             let data= [10,20,30,40,50]
+        let index= undefined
+        let item= document.getElementById('item').value
+        for(let i=0; i<=data.length-1; i++){
+            if(data[i] === parseInt(item)){
+                index= i
+                break;
+            }
+        }
+        document.write(index);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="item">
+    <button onclick="searchElement()">Button</button>
+</body>
+</html>
