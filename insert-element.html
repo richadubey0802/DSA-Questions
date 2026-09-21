@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Insert the element</title>
+    <script>
+        // let data= [1,2,3,4,5,6,7,8]
+        // let position= 3
+        // let newEle= 40
+        // for(let i= data.length-1; i>=0; i--){
+        //     if(i> position){
+        //         data[i+1]= data[i]
+        //     }
+        //     if(i == position){
+        //         data[i]= newEle;
+        //     }
+        // }
+        function getElement(){
+        let data= [1,2,3,4,5,6,7,8]
+        let position= document.getElementById('position').value
+        let newEle= document.getElementById('newElement').value
+        for(let i= data.length-1; i>=0; i--){
+            if(i> position){
+                data[i+1]= data[i]
+            }
+            if(i == position){
+                data[i]= newEle;
+            }  
+        }
+        document.write(data)
+    }
+    
+    </script>
+</head>
+<body>
+    <input type="text" id="position" placeholder="Enter the position">
+    <input type="text" id="newElement" placeholder="Enter the newElement">
+    <button  onclick="getElement()">Button</button> 
+</body>
+</html>
