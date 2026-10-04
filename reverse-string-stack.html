@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let data= [];
+        let currentVal= data.length
+        function pushEle(newVal){
+            data[currentVal]= newVal;
+            currentVal+=1
+        }
+
+        function popEle(){
+            currentVal-=1;
+            data.length= currentVal
+        }
+
+pushEle(20)
+pushEle(30)
+pushEle(40)
+popEle()
+console.log(data)
+</script>
+</head>
+<body>
+    
+</body>
+</html>
