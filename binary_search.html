@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Binary Search</title>
+    <script>
+        let data= [2,3,4,5,6,7.8]
+        let find= 4;
+        let start= 0;
+        let end= data.length-1
+        let position= undefined
+        while(start< end){
+            let mid= Math.floor((start+end)/2)
+            if(data[mid] == find){
+                position= mid;
+                break;
+            }else if(data[mid]< start){
+                position= mid+1;
+            }else{
+                position= mid-1
+            }
+        }
+        console.log(position);
+    </script>
+</head>
+<body>    
+</body>
+</html>
