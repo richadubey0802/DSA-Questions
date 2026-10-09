@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Palindrom Program</title>
+    <h1>Palindrom Program</h1>
+    <script>
+        function palindrom(data){
+        let start= 0;
+        let end= data.length-1
+        let result= true;
+        while(end> start){
+            if(data[start]!= data[end]){
+                result= false;
+            }
+            start++;
+            end--;
+        }
+        return result; 
+        }
+        let str='level';
+        document.write(`Palindrom text ${str} is, <br>`)
+        document.write(palindrom(str));  
+    </script>
+</head>
+<body>  
+</body>
+</html>
