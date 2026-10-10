@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Find missing number from array</title>
+    <script>
+        let arr= [1,2,4,7,8,9]
+        let N =7
+        for(let i=0; i< N; i++){
+            let found= false;
+            for(j =0; j< arr.length; j++){
+                if(arr[j] === i){
+                    found = true;
+                    break;
+                }
+            }
+            if(found === false){
+                console.log(i); 
+            }
+        }
+    </script>
+</head>
+<body>   
+</body>
+</html>
